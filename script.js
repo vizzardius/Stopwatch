@@ -32,6 +32,7 @@ startButton.addEventListener("click",()=>{
 })
 
 stopButton.addEventListener("click",()=>{
+   if(stopwatchInterval === null) return;
    clearInterval(stopwatchInterval)
    stopwatchInterval = null
    startButton.textContent = "Continue"
@@ -40,3 +41,4 @@ stopButton.addEventListener("click",()=>{
 resetButton.addEventListener("click",()=>{
    window.location.href = "index.html"
 })
+
