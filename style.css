@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body{
+   background-color: black;
+   color:yellow;
+   font-family: Inter;
+}
+
+.stopwatchInterface{
+   margin: auto;
+   width: 450px;
+   text-align: center;
+   margin-top: 250px;
+}
+
+span{
+   font-size: 60px;
+   margin-left: 10px;
+}
+
+.timeShow{
+   margin-top: 30px;
+}
+
+.buttons{
+   margin-bottom: 30px;
+   margin-top: 20px;
+}
+
+button{
+   background-color: yellow;
+   width: 120px;
+   font-size: 20px;
+   cursor: pointer;
+   border: none;
+   border-radius: 20px;
+   transition: transform 0.3 ease box-shadow 0.3 ease;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+@media (hover:hover) {
+   button:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 5px rgba(255,255,0,0.6);
+   }
+}
+
+.savedTimeValue{
+   font-size: 20px;
+   display: block;
+}
